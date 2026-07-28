@@ -1,0 +1,60 @@
+{
+  "queryId": "summer-a8-segment",
+  "country": "DE",
+  "decision": "PROHIBITED",
+  "departureTime": "2026-07-11T10:00:00+02:00",
+  "nextLegalDeparture": null,
+  "subjectToTruckBanRules": true,
+  "routeStates": [
+    "DE-BY",
+    "DE-BW"
+  ],
+  "restrictions": [
+    {
+      "code": "DE_FERREISEV_SUMMER_SATURDAY",
+      "title": "German summer Saturday truck driving ban",
+      "certainty": "DEFINITE",
+      "startsAt": "2026-07-11T07:00:00.000+02:00",
+      "endsAt": "2026-07-11T20:00:00.000+02:00",
+      "affectedStates": [
+        "DE-BY",
+        "DE-BW"
+      ],
+      "affectedRoads": [
+        "A8"
+      ],
+      "explanation": "From 1 July through 31 August, qualifying goods vehicles are restricted on listed road segments on Saturdays from 07:00 to 20:00. Potentially matching statutory segments: Karlsruhe triangle to München-Obermenzing junction; München-Ramersdorf junction to Bad Reichenhall junction.",
+      "source": {
+        "title": "Federal Ministry of Transport - holiday-season truck driving ban",
+        "url": "https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/lkw-fahrverbot-in-der-ferienreisezeit.html",
+        "section": "Ferienreiseverordnung § 1; route list updated 2026-07-01",
+        "accessedOn": "2026-07-26"
+      }
+    }
+  ],
+  "exemptionsApplied": [],
+  "warnings": [
+    "No temporary-order clearance covers the complete journey. A competent authority or maintained live-order feed must verify temporary bans and exemptions."
+  ],
+  "manualReviewRequired": true,
+  "routeAnalysis": null,
+  "journeyConflicts": [],
+  "departureOptions": [],
+  "ruleSetVersion": "DE-2026.07.26-v2.2",
+  "evaluatedAt": "2026-07-26T17:59:21.709Z",
+  "error": null,
+  "ruleValidity": {
+    "validFrom": "2026-01-01T00:00:00+01:00",
+    "validThrough": "2026-12-31T23:59:59.999+01:00",
+    "journeyCovered": true
+  },
+  "temporaryOrderAssessment": {
+    "status": "NOT_VERIFIED",
+    "clearanceCoversJourney": false,
+    "checkedAt": null,
+    "validFrom": null,
+    "validThrough": null,
+    "authority": null,
+    "referenceUrl": null
+  }
+}

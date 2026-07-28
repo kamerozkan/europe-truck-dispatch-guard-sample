@@ -1,0 +1,72 @@
+{
+  "queryId": "freiburg-geneva-lyon-auto",
+  "country": "AUTO",
+  "decision": "PROHIBITED",
+  "departureTime": "2026-07-13T21:00:00+02:00",
+  "nextLegalDeparture": null,
+  "subjectToTruckBanRules": true,
+  "routeStates": [
+    "DE-BW"
+  ],
+  "restrictions": [
+    {
+      "code": "CH_VRV_91_NIGHT_BAN",
+      "title": "Swiss heavy-vehicle night driving ban",
+      "certainty": "DEFINITE",
+      "startsAt": "2026-07-13T22:00:00+02:00",
+      "endsAt": "2026-07-14T05:00:00+02:00",
+      "affectedStates": [],
+      "affectedRoads": [],
+      "explanation": "The Swiss heavy-vehicle night driving ban applies from 22:00 to 05:00.",
+      "source": {
+        "title": "Federal Roads Office (ASTRA) - Sunday and night journeys",
+        "url": "https://www.astra.admin.ch/de/sonntags-und-nachtfahrten",
+        "section": "General 22:00-05:00 night ban and Sunday ban",
+        "accessedOn": "2026-07-26"
+      }
+    },
+    {
+      "code": "FR_ART1_HOLIDAY_NATIONAL_DAY",
+      "title": "French National Day French goods-vehicle driving ban",
+      "certainty": "DEFINITE",
+      "startsAt": "2026-07-14T00:00:00+02:00",
+      "endsAt": "2026-07-14T22:00:00+02:00",
+      "affectedStates": [],
+      "affectedRoads": [],
+      "explanation": "French National Day is a national French public holiday; the nationwide restriction applies from 00:00 to 22:00.",
+      "source": {
+        "title": "French order of 16 April 2021 on goods-vehicle driving restrictions",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043416004/",
+        "section": "Articles 1-5 and Annexes I-III",
+        "accessedOn": "2026-07-26"
+      }
+    }
+  ],
+  "exemptionsApplied": [],
+  "warnings": [
+    "[DE] State crossings use generalized NUTS 2024 boundaries and may differ slightly near borders.",
+    "[DE] route.roadSpansComplete is not true. Summer-road coverage may require manual review.",
+    "[CH] Swiss entry and exit points use a generalized GISCO 2024 country boundary and may differ slightly near borders.",
+    "[FR] French country and regional entry/exit points use generalized GISCO 2024 boundaries and may differ slightly near borders.",
+    "No temporary-order clearance covers the complete journey. A competent authority or maintained live-order feed must verify temporary bans and exemptions."
+  ],
+  "manualReviewRequired": true,
+  "departureOptions": [],
+  "ruleSetVersion": "DE-2026.07.26-v2.2 + CH-2026.07.26-v1.1 + FR-2026.07.26-v1.1",
+  "evaluatedAt": "2026-07-28T13:47:48.897Z",
+  "error": null,
+  "ruleValidity": {
+    "validFrom": "2026-01-01T00:00:00+01:00",
+    "validThrough": "2026-12-31T23:59:59.999+01:00",
+    "journeyCovered": true
+  },
+  "temporaryOrderAssessment": {
+    "status": "NOT_VERIFIED",
+    "clearanceCoversJourney": false,
+    "checkedAt": null,
+    "validFrom": null,
+    "validThrough": null,
+    "authority": null,
+    "referenceUrl": null
+  }
+}

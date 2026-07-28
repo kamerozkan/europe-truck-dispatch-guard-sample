@@ -1,0 +1,51 @@
+{
+  "queries": [
+    {
+      "queryId": "freiburg-geneva-lyon-auto",
+      "country": "AUTO",
+      "departureTime": "2026-07-13T21:00:00+02:00",
+      "vehicle": {
+        "isTruck": true,
+        "maximumPermissibleWeightTonnes": 18,
+        "hasTrailer": false,
+        "franceVehicleCategory": "STANDARD_GOODS"
+      },
+      "transport": {
+        "isCommercialOrPaidGoodsTransport": true,
+        "isGoodsTransport": true,
+        "cargoCategory": "GENERAL",
+        "swissExemptionCategory": "NONE",
+        "franceExemptionCategory": "NONE"
+      },
+      "route": {
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              7.85,
+              47.99
+            ],
+            [
+              7.59,
+              47.56
+            ],
+            [
+              6.14,
+              46.2
+            ],
+            [
+              4.84,
+              45.76
+            ]
+          ]
+        },
+        "segmentDurationsMinutes": [
+          30,
+          180,
+          120
+        ]
+      },
+      "includeNextLegalDeparture": true
+    }
+  ]
+}

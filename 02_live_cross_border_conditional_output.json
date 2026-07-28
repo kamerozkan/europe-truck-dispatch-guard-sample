@@ -1,0 +1,50 @@
+{
+  "queryId": "freiburg-geneva-lyon-tuesday-morning",
+  "country": "AUTO",
+  "decision": "CONDITIONAL",
+  "departureTime": "2026-07-28T10:00:00+02:00",
+  "nextLegalDeparture": null,
+  "subjectToTruckBanRules": true,
+  "routeStates": [
+    "DE-BW"
+  ],
+  "restrictions": [],
+  "exemptionsApplied": [],
+  "warnings": [
+    "[DE] State crossings use generalized NUTS 2024 boundaries and may differ slightly near borders.",
+    "[DE] route.roadSpansComplete is not true. Summer-road coverage may require manual review.",
+    "[CH] Swiss entry and exit points use a generalized GISCO 2024 country boundary and may differ slightly near borders.",
+    "[FR] French country and regional entry/exit points use generalized GISCO 2024 boundaries and may differ slightly near borders.",
+    "No temporary-order clearance covers the complete journey. A competent authority or maintained live-order feed must verify temporary bans and exemptions."
+  ],
+  "manualReviewRequired": true,
+  "routeAnalysis": {
+    "distanceKm": 350.46,
+    "durationMinutes": 330,
+    "estimatedArrivalTime": "2026-07-28T15:30:00+02:00",
+    "detectedCountries": [
+      "DE",
+      "CH",
+      "FR"
+    ]
+  },
+  "journeyConflicts": [],
+  "departureOptions": [],
+  "ruleSetVersion": "DE-2026.07.26-v2.2 + CH-2026.07.26-v1.1 + FR-2026.07.26-v1.1",
+  "evaluatedAt": "2026-07-28T21:22:18.361Z",
+  "error": null,
+  "ruleValidity": {
+    "validFrom": "2026-01-01T00:00:00+01:00",
+    "validThrough": "2026-12-31T23:59:59.999+01:00",
+    "journeyCovered": true
+  },
+  "temporaryOrderAssessment": {
+    "status": "NOT_VERIFIED",
+    "clearanceCoversJourney": false,
+    "checkedAt": null,
+    "validFrom": null,
+    "validThrough": null,
+    "authority": null,
+    "referenceUrl": null
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "queries": [
+    {
+      "queryId": "sunday-general-cargo",
+      "country": "DE",
+      "departureTime": "2026-07-12T10:00:00+02:00",
+      "routeStates": [
+        "DE-BY",
+        "DE-BW"
+      ],
+      "routeRoads": [
+        "A8"
+      ],
+      "vehicle": {
+        "isTruck": true,
+        "maximumPermissibleWeightTonnes": 18,
+        "hasTrailer": true
+      },
+      "transport": {
+        "isCommercialOrPaidGoodsTransport": true,
+        "cargoCategory": "GENERAL"
+      },
+      "includeNextLegalDeparture": true
+    },
+    {
+      "queryId": "summer-a8-segment",
+      "country": "DE",
+      "departureTime": "2026-07-11T10:00:00+02:00",
+      "routeStates": [
+        "DE-BY",
+        "DE-BW"
+      ],
+      "routeRoads": [
+        "A8"
+      ],
+      "routeIncludesRestrictedSummerSegment": true,
+      "vehicle": {
+        "isTruck": true,
+        "maximumPermissibleWeightTonnes": 18,
+        "hasTrailer": true
+      },
+      "transport": {
+        "isCommercialOrPaidGoodsTransport": true,
+        "cargoCategory": "GENERAL"
+      },
+      "includeNextLegalDeparture": true
+    }
+  ]
+}

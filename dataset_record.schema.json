@@ -1,0 +1,288 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kamerozkan/europe-truck-dispatch-guard-sample/dataset_record.schema.json",
+  "title": "Europe Truck Dispatch Guard sample result projection",
+  "description": "Core contract for the privacy-minimized result projections in this repository. Full Actor dataset rows contain additional route, country-assessment, conflict, and evidence fields.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "queryId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "country": {
+      "enum": [
+        "DE",
+        "CH",
+        "FR",
+        "AUTO"
+      ]
+    },
+    "decision": {
+      "enum": [
+        "ALLOWED",
+        "PROHIBITED",
+        "CONDITIONAL",
+        "ERROR"
+      ]
+    },
+    "departureTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "nextLegalDeparture": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "subjectToTruckBanRules": {
+      "type": "boolean"
+    },
+    "routeStates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "restrictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "certainty": {
+            "type": "string",
+            "minLength": 1
+          },
+          "startsAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endsAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "affectedStates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "affectedRoads": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "source": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "section": {
+                "type": "string",
+                "minLength": 1
+              },
+              "accessedOn": {
+                "type": "string",
+                "format": "date"
+              }
+            },
+            "required": [
+              "title",
+              "url",
+              "section",
+              "accessedOn"
+            ]
+          }
+        },
+        "required": [
+          "code",
+          "title",
+          "certainty",
+          "startsAt",
+          "endsAt",
+          "affectedStates",
+          "affectedRoads",
+          "source"
+        ]
+      }
+    },
+    "exemptionsApplied": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "manualReviewRequired": {
+      "type": "boolean"
+    },
+    "routeAnalysis": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "distanceKm": {
+          "type": "number",
+          "minimum": 0
+        },
+        "durationMinutes": {
+          "type": "number",
+          "minimum": 0
+        },
+        "estimatedArrivalTime": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "detectedCountries": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "DE",
+              "CH",
+              "FR"
+            ]
+          }
+        }
+      }
+    },
+    "journeyConflicts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "departureOptions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "ruleSetVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evaluatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ruleValidity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "validFrom": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "validThrough": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "journeyCovered": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "validFrom",
+        "validThrough",
+        "journeyCovered"
+      ]
+    },
+    "temporaryOrderAssessment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "clearanceCoversJourney": {
+          "type": "boolean"
+        },
+        "checkedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "validFrom": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "validThrough": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "authority": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "referenceUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "clearanceCoversJourney",
+        "checkedAt",
+        "validFrom",
+        "validThrough",
+        "authority",
+        "referenceUrl"
+      ]
+    }
+  },
+  "required": [
+    "queryId",
+    "country",
+    "decision",
+    "departureTime",
+    "restrictions",
+    "manualReviewRequired",
+    "ruleSetVersion",
+    "evaluatedAt",
+    "error"
+  ]
+}
