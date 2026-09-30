@@ -74,3 +74,7 @@ The repository excludes:
 - This independent Actor is not affiliated with or endorsed by German, Swiss, French, EU, road, police, customs, or transport authorities.
 
 Before dispatch, verify current official rules, route geometry, road spans, temporary orders, vehicle and cargo classification, exemptions, permits, and supporting documents with the responsible authority or a qualified professional.
+
+## Listing update on September 30, 2026
+
+The Store title, description and search metadata were checked against the owned Actor and synchronized with this repository. This documentation update does not alter executable code, input or output schemas, recorded test outputs, artifact hashes, billing or runtime builds. Existing examples retain their original dates and validation limits. A public listing is not evidence of successful output, network acceptance or an achieved search ranking.

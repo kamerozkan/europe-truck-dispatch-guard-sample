@@ -1,6 +1,10 @@
 > **Live API:** [Run Europe Truck Dispatch Guard on Apify](https://apify.com/kamerozkan/europe-truck-dispatch-guard)
 
-# Europe Truck Dispatch Guard: Samples and JSON Schema
+# Europe Truck Ban Checker - Route & Holiday Rules: Samples
+
+Route-aware 2026 truck-ban decisions for Germany, Switzerland, France, and cross-border journeys, with official sources and safer departure times.
+
+[Run Europe Truck Ban Checker - Route & Holiday Rules on Apify](https://apify.com/kamerozkan/europe-truck-dispatch-guard)
 
 [![Apify Actor](https://img.shields.io/badge/Apify-Run%20Actor-00c7b7?logo=apify)](https://apify.com/kamerozkan/europe-truck-dispatch-guard)
 ![Latest build](https://img.shields.io/badge/latest_build-0.6.7%20SUCCEEDED-2f855a)

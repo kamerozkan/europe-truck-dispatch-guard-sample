@@ -1,0 +1,15 @@
+{
+  "id": "SiIev8cPVajLV9yqW",
+  "name": "europe-truck-dispatch-guard",
+  "title": "Europe Truck Ban Checker - Route & Holiday Rules",
+  "description": "Route-aware 2026 truck-ban decisions for Germany, Switzerland, France, and cross-border journeys, with official sources and safer departure times.",
+  "seoTitle": "Europe Truck Ban Checker - Route & Holiday Rules",
+  "seoDescription": "Check truck bans in Germany, Switzerland and France by route and departure time. Get dated official-source evidence and alternative departure suggestions.",
+  "isPublic": true,
+  "url": "https://apify.com/kamerozkan/europe-truck-dispatch-guard",
+  "checkedAt": "2026-09-30",
+  "changeScope": "listing metadata and sample documentation only",
+  "runtimeChanged": false,
+  "schemasChanged": false,
+  "examplesRegenerated": false
+}
